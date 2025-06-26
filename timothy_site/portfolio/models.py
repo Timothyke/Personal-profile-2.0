@@ -1,4 +1,8 @@
 from django.db import models
+from django.contrib import admin
+from .models import DownloadLog
+
+admin.site.register(DownloadLog)
 
 class DownloadLog(models.Model):
     ip_address = models.GenericIPAddressField()
